@@ -2,12 +2,33 @@ package myclass;
 
 
 public class Phone {
+    /**
+     * ID абонента
+     */
     private int id;
+    /**
+     * Прізвище абонента
+     */
     private String LName;
+    /**
+     * Ім'я абонента
+     */
     private String FName;
+    /**
+     * По батькові абонента
+     */
     private String fatherName;
+    /**
+     * Номер рахунку
+     */
     private int accountNumber;
+    /**
+     * Час міських розмав
+     */
     private int durationWithinCity;
+    /**
+     * Час міжміських розмов
+     */
     private int durationOutCity;
 
     public Phone(){}
@@ -68,12 +89,11 @@ public class Phone {
         this.durationOutCity = durationOutCity;
     }
 
-    //TODO: Rewrite ToString()
     @Override
     public String toString() {
         return id + " - " + LName + " " + FName + " " + fatherName +
-                " рахунок - " + accountNumber +
-                " час міських розмов - " + durationWithinCity +
-                " час міжміських розмов - " + durationOutCity;
+                "; рахунок - " + accountNumber +
+                "; час міських розмов - " + durationWithinCity +
+                "; час міжміських розмов - " + durationOutCity;
     }
 }
